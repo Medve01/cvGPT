@@ -24,7 +24,7 @@ Before running the script, ensure that you have the following:
 Run the script using the following command:
 
 ```
-python script.py [options]
+python cvgpt.py [options]
 ```
 
 ### Options
@@ -40,7 +40,7 @@ python script.py [options]
    Example:
 
    ```
-   python script.py --cv_file path/to/cv.txt --action proofread
+   python cvgpt.py --cv_file path/to/cv.txt --action proofread
    ```
 
 2. **Scrape**: Scrapes the job posting from the provided URL and saves it as a new file. To use this action, provide the `--url` option with the URL of the job posting and set the `--action` option to `scrape`.
@@ -48,7 +48,7 @@ python script.py [options]
    Example:
 
    ```
-   python script.py --url https://example.com/job-posting --action scrape
+   python cvgpt.py --url https://example.com/job-posting --action scrape
    ```
 
 3. **Generate**: Generates a new CV based on the provided CV file and the job posting. Additionally, a cover letter is generated. To use this action, provide the `--cv_file` option with the path to the CV file and set the `--action` option to `generate`. This action requires a job posting to be scraped first.
@@ -56,7 +56,7 @@ python script.py [options]
    Example:
 
    ```
-   python script.py --cv_file path/to/cv.txt --action generate
+   python cvgpt.py --cv_file path/to/cv.txt --action generate
    ```
 
 **Note**: The CV file must be in plain text format. The generated CV and cover letter will be saved as Markdown files.
